@@ -2,7 +2,7 @@
 
 > 添加类似如下图苹果widget小组件开发
 
-![截图](screenshot/shot1.peg)
+![截图](screenshot/shot1.jpeg)
 
 * 其实步骤非常简单，但是觉得这个功能应该记录一下。
 
@@ -16,7 +16,7 @@
 
 3. 目录会变成下图所示，如果选择storyboard 编程，那么就可直接在MainInterface.storyboard 中画图
 
-![截图][screenshot/buzhou3@2x.png]
+![截图][screenshot/zhoubu3@2x.png]
 
 4. 如果纯代码编码，则改变直接修所在target的mainInterface就行，或者修改info.plist的NSExtension选项
 
