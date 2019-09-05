@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSUserDefaults *df = [[NSUserDefaults alloc] initWithSuiteName:@"group.iOSWidget.group"];
+    [df setValue:@"不错，不错！" forKey:@"name"];
+    [df synchronize];
+    
+    NSURL *managerUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.iOSWidget.group"];
+    NSURL *newUrl = [managerUrl URLByAppendingPathComponent:@"group.data"];
+    NSString *string = @"惊喜、意外！";
+    [string writeToURL:newUrl atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 
 

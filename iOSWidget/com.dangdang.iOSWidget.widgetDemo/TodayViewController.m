@@ -21,6 +21,16 @@
     [super viewDidLoad];
     self.enterButton.layer.cornerRadius = 20.f;
     self.enterButton.backgroundColor = UIColor.redColor;
+    
+    // 扩展程序 与宿主程序 数据互通的方式
+    // 1. group userDefaults
+//    NSUserDefaults *df = [[NSUserDefaults alloc] initWithSuiteName:@"group.iOSWidget.group"];
+//    _textLabel.text = [df valueForKey:@"name"];
+    // 2. NSFileManager
+    NSURL *managerUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.iOSWidget.group"];
+    NSURL *newUrl = [managerUrl URLByAppendingPathComponent:@"group.data"];
+    NSString *text = [NSString stringWithContentsOfURL:newUrl encoding:NSUTF8StringEncoding error:nil];
+    _textLabel.text = text;
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
