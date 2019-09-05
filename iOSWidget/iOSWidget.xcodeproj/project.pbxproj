@@ -15,6 +15,10 @@
 		4A48E38F2320EF2B009E395E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48E38E2320EF2B009E395E /* main.m */; };
 		4A48E3992320EF2B009E395E /* iOSWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48E3982320EF2B009E395E /* iOSWidgetTests.m */; };
 		4A48E3A42320EF2B009E395E /* iOSWidgetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48E3A32320EF2B009E395E /* iOSWidgetUITests.m */; };
+		4A48E3B82320F069009E395E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A48E3B72320F069009E395E /* NotificationCenter.framework */; };
+		4A48E3BC2320F069009E395E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48E3BB2320F069009E395E /* TodayViewController.m */; };
+		4A48E3BF2320F069009E395E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A48E3BD2320F069009E395E /* MainInterface.storyboard */; };
+		4A48E3C32320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4A48E3B52320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 4A48E37B2320EF2A009E395E;
 			remoteInfo = iOSWidget;
 		};
+		4A48E3C12320F069009E395E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A48E3742320EF2A009E395E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A48E3B42320F069009E395E;
+			remoteInfo = com.dangdang.iOSWidget.widgetDemo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A48E3C72320F069009E395E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A48E3C32320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A48E37C2320EF2A009E395E /* iOSWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +76,14 @@
 		4A48E39F2320EF2B009E395E /* iOSWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A48E3A32320EF2B009E395E /* iOSWidgetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSWidgetUITests.m; sourceTree = "<group>"; };
 		4A48E3A52320EF2B009E395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A48E3B52320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.dangdang.iOSWidget.widgetDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A48E3B72320F069009E395E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4A48E3BA2320F069009E395E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		4A48E3BB2320F069009E395E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		4A48E3BE2320F069009E395E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4A48E3C02320F069009E395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A48E3C82320F084009E395E /* com.dangdang.iOSWidget.widgetDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = com.dangdang.iOSWidget.widgetDemo.entitlements; sourceTree = "<group>"; };
+		4A48E3C92320F40E009E395E /* iOSWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A48E3B22320F069009E395E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A48E3B82320F069009E395E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +125,8 @@
 				4A48E37E2320EF2A009E395E /* iOSWidget */,
 				4A48E3972320EF2B009E395E /* iOSWidgetTests */,
 				4A48E3A22320EF2B009E395E /* iOSWidgetUITests */,
+				4A48E3B92320F069009E395E /* com.dangdang.iOSWidget.widgetDemo */,
+				4A48E3B62320F069009E395E /* Frameworks */,
 				4A48E37D2320EF2A009E395E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +137,7 @@
 				4A48E37C2320EF2A009E395E /* iOSWidget.app */,
 				4A48E3942320EF2B009E395E /* iOSWidgetTests.xctest */,
 				4A48E39F2320EF2B009E395E /* iOSWidgetUITests.xctest */,
+				4A48E3B52320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +145,7 @@
 		4A48E37E2320EF2A009E395E /* iOSWidget */ = {
 			isa = PBXGroup;
 			children = (
+				4A48E3C92320F40E009E395E /* iOSWidget.entitlements */,
 				4A48E37F2320EF2A009E395E /* AppDelegate.h */,
 				4A48E3802320EF2A009E395E /* AppDelegate.m */,
 				4A48E3822320EF2A009E395E /* ViewController.h */,
@@ -132,6 +177,26 @@
 			path = iOSWidgetUITests;
 			sourceTree = "<group>";
 		};
+		4A48E3B62320F069009E395E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A48E3B72320F069009E395E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A48E3B92320F069009E395E /* com.dangdang.iOSWidget.widgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A48E3C82320F084009E395E /* com.dangdang.iOSWidget.widgetDemo.entitlements */,
+				4A48E3BA2320F069009E395E /* TodayViewController.h */,
+				4A48E3BB2320F069009E395E /* TodayViewController.m */,
+				4A48E3BD2320F069009E395E /* MainInterface.storyboard */,
+				4A48E3C02320F069009E395E /* Info.plist */,
+			);
+			path = com.dangdang.iOSWidget.widgetDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +207,12 @@
 				4A48E3782320EF2A009E395E /* Sources */,
 				4A48E3792320EF2A009E395E /* Frameworks */,
 				4A48E37A2320EF2A009E395E /* Resources */,
+				4A48E3C72320F069009E395E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A48E3C22320F069009E395E /* PBXTargetDependency */,
 			);
 			name = iOSWidget;
 			productName = iOSWidget;
@@ -188,6 +255,23 @@
 			productReference = 4A48E39F2320EF2B009E395E /* iOSWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4A48E3B42320F069009E395E /* com.dangdang.iOSWidget.widgetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A48E3C42320F069009E395E /* Build configuration list for PBXNativeTarget "com.dangdang.iOSWidget.widgetDemo" */;
+			buildPhases = (
+				4A48E3B12320F069009E395E /* Sources */,
+				4A48E3B22320F069009E395E /* Frameworks */,
+				4A48E3B32320F069009E395E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.dangdang.iOSWidget.widgetDemo;
+			productName = com.dangdang.iOSWidget.widgetDemo;
+			productReference = 4A48E3B52320F069009E395E /* com.dangdang.iOSWidget.widgetDemo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +283,11 @@
 				TargetAttributes = {
 					4A48E37B2320EF2A009E395E = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					4A48E3932320EF2B009E395E = {
 						CreatedOnToolsVersion = 10.3;
@@ -207,6 +296,14 @@
 					4A48E39E2320EF2B009E395E = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 4A48E37B2320EF2A009E395E;
+					};
+					4A48E3B42320F069009E395E = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +323,7 @@
 				4A48E37B2320EF2A009E395E /* iOSWidget */,
 				4A48E3932320EF2B009E395E /* iOSWidgetTests */,
 				4A48E39E2320EF2B009E395E /* iOSWidgetUITests */,
+				4A48E3B42320F069009E395E /* com.dangdang.iOSWidget.widgetDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +350,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A48E3B32320F069009E395E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A48E3BF2320F069009E395E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +390,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A48E3B12320F069009E395E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A48E3BC2320F069009E395E /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +410,11 @@
 			isa = PBXTargetDependency;
 			target = 4A48E37B2320EF2A009E395E /* iOSWidget */;
 			targetProxy = 4A48E3A02320EF2B009E395E /* PBXContainerItemProxy */;
+		};
+		4A48E3C22320F069009E395E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A48E3B42320F069009E395E /* com.dangdang.iOSWidget.widgetDemo */;
+			targetProxy = 4A48E3C12320F069009E395E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -314,6 +433,14 @@
 				4A48E38B2320EF2B009E395E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4A48E3BD2320F069009E395E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A48E3BE2320F069009E395E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -535,6 +662,44 @@
 			};
 			name = Release;
 		};
+		4A48E3C52320F069009E395E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = com.dangdang.iOSWidget.widgetDemo/com.dangdang.iOSWidget.widgetDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7XTNF769W;
+				INFOPLIST_FILE = com.dangdang.iOSWidget.widgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.iOSWidget.com-dangdang-iOSWidget-widgetDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A48E3C62320F069009E395E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = com.dangdang.iOSWidget.widgetDemo/com.dangdang.iOSWidget.widgetDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7XTNF769W;
+				INFOPLIST_FILE = com.dangdang.iOSWidget.widgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dangdang.iOSWidget.com-dangdang-iOSWidget-widgetDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +735,15 @@
 			buildConfigurations = (
 				4A48E3AF2320EF2B009E395E /* Debug */,
 				4A48E3B02320EF2B009E395E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A48E3C42320F069009E395E /* Build configuration list for PBXNativeTarget "com.dangdang.iOSWidget.widgetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A48E3C52320F069009E395E /* Debug */,
+				4A48E3C62320F069009E395E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
