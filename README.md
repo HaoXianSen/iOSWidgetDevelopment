@@ -16,7 +16,7 @@
 
 3. 目录会变成下图所示，如果选择storyboard 编程，那么就可直接在MainInterface.storyboard 中画图
 
-![截图][screenshot/zhoubu3@2x.png]
+![截图](screenshot/zhoubu3@2x.png)
 
 4. 如果纯代码编码，则改变直接修所在target的mainInterface就行，或者修改info.plist的NSExtension选项
 
